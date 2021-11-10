@@ -2,7 +2,8 @@ import React, { useEffect, } from "react";
 import styles from './atoms.module.css';
 
 export const TextField = function({
-    fieldRef
+    fieldRef,
+    ariaLabel
 }){
     
     return(
@@ -10,6 +11,7 @@ export const TextField = function({
             type="text" 
             ref={fieldRef} 
             className={styles.filterField} 
+            aria-label={ariaLabel}
         />
     )
 }

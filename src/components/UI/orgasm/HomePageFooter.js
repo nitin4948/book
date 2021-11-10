@@ -33,8 +33,8 @@ export const HomePageFooter = function({
     }
     
     return(
-        <main className={styles.pagination}>
+        <footer className={styles.pagination}>
             { getResult() }           
-        </main>
+        </footer>
     )
 }

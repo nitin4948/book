@@ -1,6 +1,7 @@
 import React, { useEffect, } from "react";
 import styles from './orgasm.module.css';
 import { ListComponent } from "../molecules/ListComponent";
+import { HeadingLevelOne } from "../atoms/HeadingLevelOne";
 export const HomePageMain = function({
     paginationResult,
     selectedPagination,
@@ -43,7 +44,10 @@ export const HomePageMain = function({
     }
     
     return(
-        <main className={styles.listWrapper}>
+        <main className={styles.listWrapper} aria-label={'page main section'}>
+            <HeadingLevelOne
+                child={'List Page'}
+            />
             { getResult() }           
         </main>
     )

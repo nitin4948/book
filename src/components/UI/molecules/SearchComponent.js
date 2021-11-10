@@ -14,6 +14,7 @@ export const SearchComponent = function({
         <div className={styles.filterContainer}>
             <TextField
                 fieldRef={fieldRef}
+                ariaLabel={'Search Field'}
             />
             <Button 
                 clickEvent={applyFilterClick}

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Text } from "../atoms/Text";
 import styles from './molecules.module.css';
 import { Image } from "../atoms/Image";
+import { HeadingLevelOne } from "../atoms/HeadingLevelOne";
 export const customStyle = {
     heading: {
         fontWeight: 600,
